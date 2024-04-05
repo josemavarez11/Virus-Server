@@ -1,9 +1,9 @@
-import express from 'express';
-import http from 'http';
+import { fileURLToPath } from 'node:url';
+import http from 'node:http';
+import path from 'node:path';
+import fs from 'node:fs';
 import { Server as SocketIO } from 'socket.io';
-import fs from 'fs';
-import { fileURLToPath } from 'url';
-import path from 'path';
+import express from 'express';
 
 const app = express();
 const server = http.createServer(app);
